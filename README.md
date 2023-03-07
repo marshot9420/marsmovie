@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# 1.2 Why React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://nomadcoders.co/react-for-beginners/lectures/3256
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 개발자로서 중요한 것은 시간
+- 무언가를 배울 때 2달이 걸렸는데 그것이 사라진다면 낭비
+- 무언가를 배울 때 2달이 걸렸는데 그것이 5, 7, 10년 지속된다면 훌륭한 투자
+- 그런 의미에서 React는 지금(2023년) 시점에서 매우 안전하다.
+  이유1: 우리가 어떤 신기술을 배울 때, 누가 이 기술을 사용하는지, 그들의 규모가 얼마나 큰지 꼭 살펴봐야 한다.
+  그리고 이 기술이 그들에게 얼마나 중요한지도 봐야한다.
+  이유2: 1만 여개가 넘는 기업, 그 중에는 페이스북, 넷플릭스, 에어비앤비도 포함되어 있는 기업들이 쓰고 있는데
+  그들은 React JS에 많은 투자를 했다. 그런 그들이 React JS를 금방 폐기할 거라고 할 수 있겠는가?
+  이유3: React JS는 Javascript와 가깝고, 커뮤니티가 굉장히 크다.
+  예를 들어, React JS를 기반으로 제작된 프레임워크들이 존재한다.
