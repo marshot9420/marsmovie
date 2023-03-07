@@ -5,20 +5,14 @@
   </body>
   <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-  <script>
-    let counter = 0;
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
     const root = document.getElementById("root");
-    const span = React.createElement("span", null, "I'm a span!");
-    const btn = React.createElement(
-      "button",
-      {
-        onClick: () => {
-          console.log("Hello!");
-        },
-      },
-      "Click Me!"
+    const Span = <span>I'm a span!</span>;
+    const Button = (
+      <button onClick={() => console.log("Hello!")}>Click Me!</button>
     );
-    const container = React.createElement("div", null, [span, btn]);
+    const container = React.createElement("div", null, [Span, Button]);
     ReactDOM.render(container, root);
   </script>
 </html>
