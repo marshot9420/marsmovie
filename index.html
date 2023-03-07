@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <body></body>
+  <body>
+    <div id="root"></div>
+  </body>
   <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-  <script></script>
+  <script>
+    const root = document.getElementById("root");
+    const button = React.createElement(
+      "button",
+      { id: "sexy-button" },
+      "Hello World!"
+    );
+    // React JS 문법 사용, 1번쨰 인자는 생성하고자 하는 html태그, 2번째 인자는 그 태그의 속성, 3번쨰 인자는 내용
+    ReactDOM.render(button, root);
+    // span을 root안에 넣어 줘
+  </script>
 </html>
