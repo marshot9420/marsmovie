@@ -11,7 +11,6 @@ const MovieListSection = ({ children }) => {
 
   const fetchMovies = async () => {
     const json = await (await fetch(URLS.API.MOVIES)).json();
-    console.log(json.data.results);
     setMovies(json.data.results);
     setLoading(false);
   };

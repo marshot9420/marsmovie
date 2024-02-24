@@ -4,7 +4,7 @@ import { formatDate } from "../../../utils/format";
 
 import styles from "./MovieCard.module.css";
 
-const MovieCard = ({ name, thumbnail, modified }) => {
+const MovieCard = ({ name, thumbnail, description, modified }) => {
   const date = formatDate(modified);
 
   return (
@@ -14,7 +14,7 @@ const MovieCard = ({ name, thumbnail, modified }) => {
       </div>
       <div className={styles.content}>
         <h4>{name}</h4>
-        <span>{date}</span>
+        <small>{date}</small>
       </div>
     </div>
   );
