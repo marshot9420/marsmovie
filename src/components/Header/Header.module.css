@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 5.6rem;
+}
+
+.header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: inherit;
+}
+
+.header__title {
+  color: #be7539;
+}
