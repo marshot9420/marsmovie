@@ -4,6 +4,10 @@
   align-items: center;
 
   height: 5.6rem;
+
+  z-index: 500;
+
+  position: fixed;
 }
 
 .header a {
