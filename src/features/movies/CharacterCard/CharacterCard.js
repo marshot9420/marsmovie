@@ -2,9 +2,9 @@ import { memo } from "react";
 
 import { formatDate } from "../../../utils/format";
 
-import styles from "./MovieCard.module.css";
+import styles from "./CharacterCard.module.css";
 
-const MovieCard = ({ name, thumbnail, description, modified }) => {
+const CharacterCard = ({ id, name, thumbnail, modified }) => {
   const date = formatDate(modified);
 
   return (
@@ -20,4 +20,4 @@ const MovieCard = ({ name, thumbnail, description, modified }) => {
   );
 };
 
-export default memo(MovieCard);
+export default memo(CharacterCard);

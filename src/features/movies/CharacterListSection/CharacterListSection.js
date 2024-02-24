@@ -1,16 +1,20 @@
 import { memo, useEffect, useState } from "react";
 
+import { Link, useParams } from "react-router-dom";
+
 import { URLS } from "../../../constants/urls";
 
-import { MovieCard } from "../MovieCard";
-import styles from "./MovieListSection.module.css";
+import { CharacterCard } from "../CharacterCard";
 
-const MovieListSection = ({ children }) => {
+import styles from "./CharacterListSection.module.css";
+
+const CharacterListSection = ({ children }) => {
+  const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
 
   const fetchMovies = async () => {
-    const json = await (await fetch(URLS.API.MOVIES)).json();
+    const json = await (await fetch(URLS.API.CHARACTERS)).json();
     setMovies(json.data.results);
     setLoading(false);
   };
@@ -25,21 +29,21 @@ const MovieListSection = ({ children }) => {
         {loading ? (
           <h1>Loading...</h1>
         ) : (
-          <>
+          <Link to={`${URLS.CLIENT.CHARACTER}/${id}`}>
             {movies.map((movie) => (
-              <MovieCard
+              <CharacterCard
                 key={movie.id}
-                movieId={movie.id}
+                id={movie.id}
                 name={movie.name}
                 modified={movie.modified}
                 thumbnail={`${movie.thumbnail.path}.${movie.thumbnail.extension}`}
               />
             ))}
-          </>
+          </Link>
         )}
       </section>
     </div>
   );
 };
 
-export default memo(MovieListSection);
+export default memo(CharacterListSection);

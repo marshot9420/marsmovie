@@ -1,7 +1,7 @@
-import { MovieListSection } from "../features/movies";
+import { CharacterListSection } from "../features/movies";
 
 const Home = () => {
-  return <MovieListSection />;
+  return <CharacterListSection />;
 };
 
 export default Home;

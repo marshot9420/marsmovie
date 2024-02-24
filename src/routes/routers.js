@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../components";
-import { Home } from "../pages";
+import { CharacterDetail, Home } from "../pages";
 
 import { URLS } from "../constants/urls";
 
@@ -12,6 +12,10 @@ export const routers = createBrowserRouter([
       {
         path: URLS.CLIENT.HOME,
         element: <Home />,
+      },
+      {
+        path: `${URLS.CLIENT.CHARACTER}/:id`,
+        element: <CharacterDetail />,
       },
     ],
   },
