@@ -1,4 +1,4 @@
-import { CharacterListSection } from "../features/movies";
+import { CharacterListSection } from "../features/characters";
 
 const Home = () => {
   return <CharacterListSection />;
