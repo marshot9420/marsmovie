@@ -1,0 +1,35 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #be7539;
+
+  z-index: 100;
+
+  font-family: Impact;
+  font-size: 5rem;
+
+  overflow: hidden;
+
+  animation: fadeInText 4s linear;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
