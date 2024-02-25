@@ -1,15 +1,14 @@
 import { memo } from "react";
 
 import { Loading } from "../../../components";
+import { useSearchContext } from "../../../hooks";
 
 import { CharacterCard } from "../CharacterCard";
-
-import useCharacterListViewModel from "../useCharacterListViewModel";
 
 import styles from "./CharacterListSection.module.css";
 
 const CharacterListSection = () => {
-  const { loading, characters } = useCharacterListViewModel();
+  const { characters, loading } = useSearchContext();
 
   return (
     <div className={styles.section_container}>
