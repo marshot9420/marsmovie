@@ -1,8 +1,10 @@
 import { memo } from "react";
 
-import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
-import { URLS } from "../../constants/urls";
+
+import { URLS } from "../../../constants/urls";
+
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
