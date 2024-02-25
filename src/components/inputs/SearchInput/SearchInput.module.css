@@ -1,0 +1,10 @@
+.search_input {
+  outline: none;
+  border: none;
+  padding: 0.4rem 0.8rem;
+
+  border-bottom: 0.1rem solid #fff;
+
+  background-color: #000;
+  color: #fff;
+}
