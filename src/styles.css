@@ -8,6 +8,8 @@ body {
   font-size: 160%;
   letter-spacing: 0.05rem;
   line-height: 1.7;
+
+  background-color: black;
 }
 
 #root {

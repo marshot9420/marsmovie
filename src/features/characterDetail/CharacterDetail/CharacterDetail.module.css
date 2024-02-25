@@ -1,0 +1,152 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail__inner {
+  max-width: 120rem;
+}
+
+.detail__inner h1 {
+  color: #be7539;
+}
+
+.detail__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.detail__profile__image {
+  cursor: pointer;
+
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(255, 255, 255, 0.3),
+    0 -6px 16px -6px rgba(255, 255, 255, 0.025);
+}
+
+.detail__profile__image:hover {
+  transform: translateY(-0.5rem);
+}
+
+.detail__profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+
+.detail__profile__content h4 {
+  color: tomato;
+}
+
+.detail__profile__content p {
+  color: #ffffff;
+}
+
+.detail__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 2.8rem;
+
+  @media (max-width: 76.8rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 40rem) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.detail__items__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 10rem;
+  padding: 2.4rem;
+
+  border-radius: 2rem;
+
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(255, 255, 255, 0.3),
+    0 -6px 16px -6px rgba(255, 255, 255, 0.025);
+}
+
+.detail__items__content h4 {
+  color: tomato;
+}
+
+.detail__items__content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail__items__content ul li {
+  cursor: pointer;
+
+  padding: 0 1rem;
+  border-radius: 1rem;
+
+  color: #ffffff;
+}
+
+.detail__items__content ul li:hover {
+  background-color: #e7e1e1;
+  color: #000;
+}
+
+.detail_links {
+  display: flex;
+  align-items: center;
+}
+
+.detail_links h4 {
+  color: tomato;
+}
+
+.detail_links ul {
+  display: flex;
+  list-style: none;
+
+  gap: 1rem;
+}
+
+.detail_links ul li {
+  border-radius: 1rem;
+
+  padding: 0 0.5rem;
+
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.detail_links ul li:hover {
+  background-color: #e7e1e1;
+}
+
+.detail_links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail_links ul li a:hover {
+  color: #000;
+}
