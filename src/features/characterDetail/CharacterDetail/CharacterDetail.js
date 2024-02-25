@@ -1,6 +1,7 @@
 import { memo } from "react";
 
 import styles from "./CharacterDetail.module.css";
+import ItemList from "./ItemList/ItemList";
 
 const CharacterDetail = ({ detail }) => {
   return (
@@ -25,41 +26,22 @@ const CharacterDetail = ({ detail }) => {
         </div>
 
         <div className={styles.detail__items}>
-          <div className={styles.detail__items__content}>
-            <h4>{detail.comics.available} Comics</h4>
-            <ul>
-              {detail.comics.items.map((item) => (
-                <li key={item.name}>{item.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className={styles.detail__items__content}>
-            <h4>{detail.series.available} Series</h4>
-            <ul>
-              {detail.series.items.map((item) => (
-                <li key={item.name}>{item.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className={styles.detail__items__content}>
-            <h4>{detail.stories.available} Stories</h4>
-            <ul>
-              {detail.stories.items.map((item) => (
-                <li key={item.name}>{item.name}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className={styles.detail__items__content}>
-            <h4>{detail.events.available} Events</h4>
-            <ul>
-              {detail.events.items.map((item) => (
-                <li key={item.name}>{item.name}</li>
-              ))}
-            </ul>
-          </div>
+          <ItemList
+            title={`${detail.comics.available} Comics`}
+            items={detail.comics.items}
+          />
+          <ItemList
+            title={`${detail.series.available} Series`}
+            items={detail.series.items}
+          />
+          <ItemList
+            title={`${detail.stories.available} Stories`}
+            items={detail.stories.items}
+          />
+          <ItemList
+            title={`${detail.events.available} Events`}
+            items={detail.events.items}
+          />
         </div>
 
         <div className={styles.detail_links}>
